@@ -1,11 +1,18 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "Node16",
         "esModuleInterop": true,
         "target": "es6",
-        "moduleResolution": "node",
-        "outDir": "./dist",
-        "sourceMap": true
+        "moduleResolution": "node16",
+        "outDir": "./bin",
+        "sourceMap": true,
+        "rootDir": "src",
+        "strict": true
+    },
+    "ts-node": {
+        "transpileOnly": true,
+        "files": true,
+        "experimentalResolver": true
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
